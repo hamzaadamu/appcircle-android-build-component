@@ -1,6 +1,8 @@
 set -e
 set -x
 
+echo $AC_ENV_FILE_PATH
+
 git clone https://github.com/appcircleio/appcircle-sample-android.git
 
 export AC_MODULE=app
