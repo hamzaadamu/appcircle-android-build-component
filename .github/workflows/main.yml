@@ -34,6 +34,6 @@ jobs:
     - name: Run build test
       run: bash test.sh
       env:
-          AC_ENV_FILE_PATH: $(pwd)/env_variables.json
+          AC_ENV_FILE_PATH: ./env_variables.json
     - name: Write the content of the env_variables.json file
       run: cat $AC_ENV_FILE_PATH
