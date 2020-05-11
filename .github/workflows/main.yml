@@ -23,8 +23,10 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
+    - name: Create environment variable file
+      run: touch env_variables.json
+    - name: List files & folders
+      run: ls
     - name: Setup Ruby for use with actions
       uses: actions/setup-ruby@v1.0.0
     # Runs a set of commands using the runners shell
