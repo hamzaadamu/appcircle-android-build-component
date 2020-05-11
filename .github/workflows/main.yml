@@ -31,3 +31,6 @@ jobs:
     - name: Check ruby version
       run: |
         ruby -v
+    - name: Run build test
+      run: |
+        bash test.sh
