@@ -15,4 +15,4 @@ export AC_PROJECT_PATH=./
 export AC_ENV_FILE_PATH=./env_variables_output.json
   
 ruby android_build.rb
-cat AC_ENV_FILE_PATH
+cat $AC_ENV_FILE_PATH
