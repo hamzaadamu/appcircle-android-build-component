@@ -24,9 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Create environment variable file
-      run:  |
-        touch env_variables.json
-        export AC_ENV_FILE_PATH=export AC_ENV_FILE_PATH=$(pwd)/env_variables.json
+      run: touch env_variables.json
     - name: Setup Ruby for use with actions
       uses: actions/setup-ruby@v1.0.0
     # Runs a set of commands using the runners shell
@@ -34,7 +32,8 @@ jobs:
       run: |
         ruby -v
     - name: Run build test
-      run: |
-        bash test.sh
+      run: bash test.sh
+      env:
+          AC_ENV_FILE_PATH: $(pwd)/env_variables.json
     - name: Write the content of the env_variables.json file
       run: cat $AC_ENV_FILE_PATH
