@@ -12,8 +12,6 @@ export AC_OUTPUT_TYPE=apk
 mkdir output-dir
 export AC_OUTPUT_DIR=./output-dir
 export AC_REPOSITORY_DIR=./appcircle-sample-android
-# gradlew path  
 export AC_PROJECT_PATH=./
-#export AC_ENV_FILE_PATH=./env_variables_output.json
   
 ruby android_build.rb
