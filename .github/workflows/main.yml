@@ -32,7 +32,7 @@ jobs:
       run: |
         ruby -v
     - name: Run build test
-      run: bash android_build_test.sh
+      run: bash tests/android_build_test.sh
       env:
           AC_ENV_FILE_PATH: ./env_variables.json
     - name: Output environment variables
