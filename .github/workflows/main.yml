@@ -35,5 +35,4 @@ jobs:
       run: bash tests/android_build_test.sh
       env:
           AC_ENV_FILE_PATH: ./env_variables.json
-    - name: Output environment variables
-      run: cat ./env_variables.json
+
